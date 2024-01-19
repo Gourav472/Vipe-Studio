@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Konexy Personal Use';
+    src: url('../dist/assets/fonts/KonexyPersonalUse.otf');
+}
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('../dist/assets/fonts/Gilroy-Light.ttf');
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../dist/assets/fonts/Gilroy-Bold.ttf');
+}
+
+.menulist.show {
+    right: 0;
+}
+
+.menuicon.show .bar:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.menuicon.show .bar:nth-child(2) {
+    display: none;
+}
+
+.menuicon.show .bar:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+.hover-y:hover{
+   transform: translateY(-20px) ;
+}
+.hover-y:hover svg path {
+fill: purple !important;
+}
